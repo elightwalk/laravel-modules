@@ -32,7 +32,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Elightwalk\\": "src"
+      "Elightwalk\\Modules\\": "src"
     },
     "files": [
       "src/helpers.php"
@@ -40,17 +40,17 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Elightwalk\\Tests\\": "tests",
+      "Elightwalk\\Modules\\Tests\\": "tests",
       "Modules\\Recipe\\": "tests/stubs/valid/Recipe"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Elightwalk\\LaravelModulesServiceProvider"
+        "Elightwalk\\Modules\\LaravelModulesServiceProvider"
       ],
       "aliases": {
-        "Module": "Elightwalk\\Facades\\Module"
+        "Module": "Elightwalk\\Modules\\Facades\\Module"
       }
     },
     "branch-alias": {
