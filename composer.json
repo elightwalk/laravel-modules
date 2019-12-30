@@ -47,10 +47,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Elightwalk\\Modules\\LaravelModulesServiceProvider"
+        "Elightwalk\\LaravelModulesServiceProvider"
       ],
       "aliases": {
-        "Module": "Elightwalk\\Modules\\Facades\\Module"
+        "Module": "Elightwalk\\Facades\\Module"
       }
     },
     "branch-alias": {
