@@ -34,11 +34,16 @@ By default the module classes are not loaded automatically. You can autoload you
 
 ### Composer
 
+Do composer autoload
+
 ``` bash
 composer dump-autoload
 ```
 
 ### Config cache
+
+Clear config cache 
+
 ``` bash
 php artisan config:cache
 ```
