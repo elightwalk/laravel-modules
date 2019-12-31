@@ -32,7 +32,16 @@ By default the module classes are not loaded automatically. You can autoload you
 }
 ```
 
-**Tip: don't forget to run `composer dump-autoload` afterwards.**
+### Composer
+
+``` bash
+composer dump-autoload
+```
+
+### Config cache
+``` bash
+php artisan config:cache
+```
 
 ## Credits
 
