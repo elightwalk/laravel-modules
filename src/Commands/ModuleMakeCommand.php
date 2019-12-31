@@ -5,11 +5,14 @@ namespace Elightwalk\Modules\Commands;
 use Illuminate\Console\Command;
 use Elightwalk\Modules\Contracts\ActivatorInterface;
 use Elightwalk\Modules\Generators\ModuleGenerator;
+use Elightwalk\Modules\Traits\CanCacheModulesConfig;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
 class ModuleMakeCommand extends Command
 {
+    use CanCacheModulesConfig;
+
     /**
      * The console command name.
      *
@@ -45,6 +48,8 @@ class ModuleMakeCommand extends Command
         }
 
         system('composer dump-autoload');
+
+        $this->cacheConfig();
     }
 
     /**
