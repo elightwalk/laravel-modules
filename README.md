@@ -1,12 +1,12 @@
 
-`helloelightwalk/laravel-modules` is a Laravel package which created to manage your large Laravel app using modules. Module is like a Laravel package, it has some views, controllers or models. This package is supported and tested in Laravel 6.
+`elightwalk/laravel-modules` is a Laravel package which created to manage your large Laravel app using modules. Module is like a Laravel package, it has some views, controllers or models. This package is supported and tested in Laravel 6.
 
 ## Install
 
 To install through Composer, by run the following command:
 
 ``` bash
-composer require helloelightwalk/laravel-modules
+composer require elightwalk/laravel-modules
 ```
 
 The package will automatically register a service provider and alias.
@@ -36,7 +36,7 @@ By default the module classes are not loaded automatically. You can autoload you
 
 ## Credits
 
-- [Elightwalk Technology](https://github.com/helloelightwalk)
+- [Elightwalk Technology](https://github.com/elightwalk)
 
 ## About Elightwalk Technology
 
