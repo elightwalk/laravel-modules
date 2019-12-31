@@ -36,7 +36,7 @@ By default the module classes are not loaded automatically. You can autoload you
 
 ## Credits
 
-- [Elightwalk Technology](https://github.com/elightwalk)
+- [ Elightwalk Technology ](https://github.com/elightwalk)
 
 ## About Elightwalk Technology
 
@@ -52,7 +52,7 @@ SaaS development.
 PWA development.
 Full Stack Development
 ```
-visit [my website](https://elightwalk.com).
+visit [ elightwalk.com ](https://elightwalk.com).
 
 
 ## License
