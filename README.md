@@ -9,7 +9,7 @@ Laravel 5 Modules
 - [Helpers](#helpers)
 - [Compiling Assets](#compiling-assets)
 - [Artisan Commands](#artisan-commands)
-- [Facades](#facades)
+- [Facades](#facade-methods)
 - [Module Methods](#module-methods)
 - [Module Resources](#module-resources)
 - [Module Console Commands](#module-console-commands)
@@ -169,6 +169,8 @@ bootstrap/
 vendor/
 ```
 <a name="helpers"></a>
+
+## Helpers
 
 Get the path to the given module.
 
@@ -666,9 +668,12 @@ Get an array of module requirements. Note: these should be aliases of the module
 $module->getRequires();
 ```
 
-## Module Resources
+
 
 <a name="module-resources"></a>
+
+## Module Resources
+
 Your module will most likely contain what laravel calls resources, those contain configuration, views, translation files, etc. In order for you module to correctly load and if wanted publish them you need to let laravel know about them as in any regular package.
 
 Configuration
