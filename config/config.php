@@ -70,7 +70,7 @@ return [
         |
         */
 
-        'modules' => base_path('App/Modules/Elightwalk'),
+        'modules' => base_path('app/Modules/Elightwalk'),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path

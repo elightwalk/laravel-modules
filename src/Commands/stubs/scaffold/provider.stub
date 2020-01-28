@@ -15,7 +15,6 @@ class $CLASS$ extends ServiceProvider
     public function boot()
     {
         $this->registerTranslations();
-        $this->registerConfig();
         $this->registerViews();
         $this->registerFactories();
         $this->loadMigrationsFrom(module_path('$MODULE$', '$MIGRATIONS_PATH$'));
@@ -29,6 +28,7 @@ class $CLASS$ extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+        $this->registerConfig();
     }
 
     /**
