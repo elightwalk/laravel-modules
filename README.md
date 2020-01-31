@@ -674,7 +674,7 @@ $module->getRequires();
 
 ## Module Resources
 
-Your module will most likely contain what laravel calls resources, those contain configuration, views, translation files, etc. In order for you module to correctly load and if wanted publish them you need to let laravel know about them as in any regular package.
+Your module will most likely contain what laravel calls resources, those contain configuration, views, translation files, etc. In order for you module to correctly load and if wanted publish them you need to let laravel know about them as in any regular package. clean cache  after merge
 
 Configuration
 ```
@@ -703,6 +703,15 @@ $this->loadViewsFrom(array_merge(array_map(function ($path) {
 }, \Config::get('view.paths')), [$sourcePath]), 'user');
 ```
 
+Use
+```
+@extends('user::layouts.master')
+@include('user::auth.tokenexpire')
+```
+
+
+
+
 Language files
 ```
 $langPath = base_path('resources/lang/modules/user');
@@ -712,6 +721,24 @@ if (is_dir($langPath)) {
 } else {
     $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'user');
 }
+```
+
+Structure
+
+```
+— Elightwalk
+    - User
+        — Resources
+            — lang
+                — en
+                    messages.php
+                — dk
+                    messages.php
+```
+
+Use
+```
+@lang('user::messages.something')
 ```
 
 Factories
