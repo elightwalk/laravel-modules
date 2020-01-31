@@ -1,4 +1,4 @@
-Laravel 5 Modules
+Laravel Modules Creator
 ===============
 
 - [Installation](#installation)
