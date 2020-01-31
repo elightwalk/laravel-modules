@@ -2,11 +2,11 @@
   "name": "elightwalk/laravel-modules",
   "description": "Laravel Module management",
   "keywords": [
+    "laravel_module",
     "modules",
     "laravel",
     "elightwalk",
-    "module",
-    "rad"
+    "php"
   ],
   "license": "MIT",
   "authors": [
